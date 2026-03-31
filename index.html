@@ -212,30 +212,65 @@
             <span class="eyebrow">Quick Inquiry</span>
             <h2>Simple website-ready contact form</h2>
             <p>
-              This starter form is designed for a website package. A developer can connect it to
-              Formspree, Netlify Forms, or your CRM.
-            </p>
-          </div>
+             <form action="https://formspree.io/f/xojpwbaz" method="POST">
 
-          <form class="inquiry-form" action="mailto:james.dcrcompany@gmail.com" method="post" enctype="text/plain">
-            <label>
-              Name
-              <input type="text" name="Name" placeholder="Your name" />
-            </label>
-            <label>
-              Email
-              <input type="email" name="Email" placeholder="you@example.com" />
-            </label>
-            <label>
-              Phone
-              <input type="text" name="Phone" placeholder="Best number to reach you" />
-            </label>
-            <label>
-              Property needs
-              <textarea name="Property Needs" rows="5" placeholder="Tell us about your property and what you need help with"></textarea>
-            </label>
-            <button type="submit" class="btn btn-primary">Send Inquiry</button>
-          </form>
+  <!-- Email subject (important) -->
+  <input type="hidden" name="_subject" value="New DCR Website Lead">
+
+  <!-- Name -->
+  <label>
+    Full Name
+    <input type="text" name="name" placeholder="John Smith" required>
+  </label>
+
+  <!-- Email -->
+  <label>
+    Email Address
+    <input type="email" name="email" placeholder="john@email.com" required>
+  </label>
+
+  <!-- Phone -->
+  <label>
+    Phone Number
+    <input type="text" name="phone" placeholder="(912) 000-0000">
+  </label>
+
+  <!-- Property Type -->
+  <label>
+    Property Type
+    <select name="property_type">
+      <option value="">Select one</option>
+      <option>Primary Home</option>
+      <option>Second Home</option>
+      <option>Short-Term Rental</option>
+      <option>Investment Property</option>
+    </select>
+  </label>
+
+  <!-- Services Needed -->
+  <label>
+    What do you need help with?
+    <select name="service">
+      <option value="">Select one</option>
+      <option>Monthly Maintenance</option>
+      <option>Exterior / Pressure Washing</option>
+      <option>Repairs / Handyman Work</option>
+      <option>Full Property Care</option>
+    </select>
+  </label>
+
+  <!-- Message -->
+  <label>
+    Tell us about your property
+    <textarea name="message" rows="4" placeholder="Address, details, what you're looking for..."></textarea>
+  </label>
+
+  <!-- Button -->
+  <button type="submit" class="btn btn-primary">
+    Get My Free Property Assessment
+  </button>
+
+</form>
         </div>
       </div>
     </section>
