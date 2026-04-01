@@ -576,5 +576,10 @@ h3 {
   .form-row {
     grid-template-columns: 1fr;
   }
+  .seo-line {
+  margin-top: 8px;
+  font-size: 0.95rem;
+  color: #5b6472;
+}
 
 }
