@@ -211,25 +211,97 @@ Trusted by local owners who want their property handled professionally and consi
   Tell us about your property and we’ll recommend the best maintenance plan based on your needs.
   </p>
 
-  <form action="https://formspree.io/f/xojpwbaz" method="POST">
+ <section id="contact" class="section contact-section">
+  <div class="container split-grid">
+    <div class="card contact-card">
+      <div class="section-head left">
+        <span class="eyebrow">Contact</span>
+        <h2>Ready to Make Property Maintenance Simple?</h2>
+        <p>Reach out for a free property assessment and a clear next step for your property.</p>
+      </div>
 
-    <input type="text" name="name" placeholder="Full Name" required>
-    <input type="email" name="email" placeholder="Email Address" required>
-    <input type="text" name="phone" placeholder="Phone Number">
+      <div class="contact-list">
+        <div>
+          <span class="label">Call or Text</span>
+          <a href="tel:9127845495">912-784-5495</a>
+        </div>
+        <div>
+          <span class="label">Email</span>
+          <a href="mailto:james.dcrcompany@gmail.com">james.dcrcompany@gmail.com</a>
+        </div>
+        <div>
+          <span class="label">Service Area</span>
+          <p>Greater Savannah and Tybee Island</p>
+        </div>
+      </div>
+    </div>
 
-    <select name="property_type">
-      <option value="">Property Type</option>
-      <option>Primary Home</option>
-      <option>Second Home</option>
-      <option>Short-Term Rental</option>
-      <option>Investment Property</option>
-    </select>
+    <div class="card form-card polished-form-card">
+      <div class="section-head left form-head">
+        <span class="eyebrow">Free Assessment</span>
+        <h2>Get Your Free Property Assessment</h2>
+        <p>Tell us a little about your property and we’ll reach out with the best next steps.</p>
+      </div>
 
-    <textarea name="message" placeholder="Tell us about your property..."></textarea>
+      <form action="https://formspree.io/f/xojpwbaz" method="POST" class="inquiry-form polished-form">
+        <input type="hidden" name="_subject" value="New DCR Website Lead" />
 
+        <div class="form-row">
+          <label>
+            <span>Full Name</span>
+            <input type="text" name="name" placeholder="Enter your full name" required />
+          </label>
+
+          <label>
+            <span>Email Address</span>
+            <input type="email" name="email" placeholder="Enter your email address" required />
+          </label>
+        </div>
+
+        <div class="form-row">
+          <label>
+            <span>Phone Number</span>
+            <input type="text" name="phone" placeholder="Best number to reach you" />
+          </label>
+
+          <label>
+            <span>Property Type</span>
+            <select name="property_type">
+              <option value="">Select property type</option>
+              <option>Primary Home</option>
+              <option>Second Home</option>
+              <option>Short-Term Rental</option>
+              <option>Investment Property</option>
+            </select>
+          </label>
+        </div>
+
+        <label>
+          <span>Property Address</span>
+          <input type="text" name="property_address" placeholder="Enter the property address" />
+        </label>
+
+        <label>
+          <span>Services Needed</span>
+          <select name="service">
+            <option value="">Select a service</option>
+            <option>Monthly Maintenance</option>
+            <option>Exterior / Pressure Washing</option>
+            <option>Repairs / Handyman Work</option>
+            <option>Full Property Care</option>
+          </select>
+        </label>
+
+       
+
+        <button type="submit" class="btn btn-primary polished-submit-btn">
+          Get My Free Property Assessment
+        </button>
+
+       
+</section>
     <button type="submit">Get My Free Assessment</button>
 
-  </form>
 
   <p class="urgency">
     Limited availability for new monthly service clients.
@@ -252,10 +324,8 @@ Trusted by local owners who want their property handled professionally and consi
   
    
 
-        <p class="form-note">Limited availability for new monthly service clients.</p>
-      </form>
-    </div>
-  </div>
+       
+     
 </section>
    <footer class="site-footer">
   <div class="container footer-wrap">
