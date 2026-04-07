@@ -1,6 +1,5 @@
 <section class="dcr-page">
 
-  <!-- HERO -->
   <section class="dcr-hero">
     <div class="dcr-container">
       <div class="dcr-hero-content">
@@ -18,7 +17,6 @@
     </div>
   </section>
 
-  <!-- TRUST BAR -->
   <section class="dcr-trust-bar">
     <div class="dcr-container dcr-trust-grid">
       <div>6+ Years Serving Savannah & Tybee</div>
@@ -27,7 +25,6 @@
     </div>
   </section>
 
-  <!-- WHO WE SERVE -->
   <section class="dcr-section">
     <div class="dcr-container dcr-two-column">
       <div>
@@ -52,7 +49,6 @@
     </div>
   </section>
 
-  <!-- HOW IT WORKS -->
   <section class="dcr-section dcr-section-alt">
     <div class="dcr-container">
       <div class="dcr-section-label center">How It Works</div>
@@ -77,7 +73,6 @@
     </div>
   </section>
 
-  <!-- SERVICES -->
   <section class="dcr-section" id="services">
     <div class="dcr-container">
       <div class="dcr-section-label center">Services</div>
@@ -85,34 +80,24 @@
       <div class="dcr-services-grid">
         <div class="dcr-service-card">
           <h3>Ongoing Home Care Program</h3>
-          <p>
-            Routine inspections, preventative maintenance, seasonal upkeep, and consistent oversight to help
-            prevent larger issues before they happen.
-          </p>
+          <p>Routine inspections, preventative maintenance, seasonal upkeep, and consistent oversight to help prevent larger issues before they happen.</p>
         </div>
         <div class="dcr-service-card">
           <h3>Exterior & Curb Appeal</h3>
-          <p>
-            Exterior care, visual upkeep, and presentation-focused maintenance that keeps your property looking its best.
-          </p>
+          <p>Exterior care, visual upkeep, and presentation-focused maintenance that keeps your property looking its best.</p>
         </div>
         <div class="dcr-service-card">
           <h3>Repairs & Project Support</h3>
-          <p>
-            From smaller repairs to improvement projects, we help keep your property functional, polished, and well maintained.
-          </p>
+          <p>From smaller repairs to improvement projects, we help keep your property functional, polished, and well maintained.</p>
         </div>
         <div class="dcr-service-card">
           <h3>Rental Readiness Support</h3>
-          <p>
-            Support designed to help your home stay clean, functional, and guest-ready between stays.
-          </p>
+          <p>Support designed to help your home stay clean, functional, and guest-ready between stays.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- WHY DCR -->
   <section class="dcr-section dcr-dark-section">
     <div class="dcr-container">
       <div class="dcr-section-label center light">Why DCR</div>
@@ -128,97 +113,88 @@
     </div>
   </section>
 
-/* ===== DCR FORM (CLEAN + HIGH CONVERSION) ===== */
+  <section class="dcr-section dcr-form-section" id="dcr-form">
+    <div class="dcr-container dcr-form-wrap">
+      <div class="dcr-form-copy">
+        <div class="dcr-section-label">Free Property Assessment</div>
+        <h2>Get Trusted Local Help Without the Guesswork</h2>
+        <p>
+          Tell us a little about your property and what kind of help you are looking for.
+          We’ll follow up to learn more and see if DCR is the right fit.
+        </p>
+        <div class="dcr-form-points">
+          <div>✔ No pressure</div>
+          <div>✔ Local team with 6+ years serving Savannah & Tybee</div>
+          <div>✔ Ideal for second homes, rentals, and investment properties</div>
+        </div>
+      </div>
 
-.dcr-form-card {
-  background: #ffffff;
-  border-radius: 18px;
-  padding: 32px;
-  box-shadow: 0 18px 40px rgba(16,42,67,.1);
-  border: 1px solid rgba(16,42,67,.06);
-}
+      <div class="dcr-form-card">
+        <h3>Request Your Free Assessment</h3>
+        <p class="dcr-form-intro">Fill out the quick form below and our team will be in touch.</p>
 
-.dcr-form-card h3 {
-  margin-top: 0;
-  margin-bottom: 10px;
-  font-size: 26px;
-  color: #102a43;
-}
+        <form method="post" action="#" class="dcr-form-grid">
+          <div class="dcr-field">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+          </div>
 
-.dcr-form-intro {
-  margin-bottom: 20px;
-  color: #5c6772;
-}
+          <div class="dcr-field">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Best number to reach you" required>
+          </div>
 
-.dcr-form-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-}
+          <div class="dcr-field">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Your email" required>
+          </div>
 
-.dcr-field {
-  display: flex;
-  flex-direction: column;
-}
+          <div class="dcr-field">
+            <label for="location">Property Location</label>
+            <input type="text" id="location" name="location" placeholder="Savannah, Tybee, or nearby" required>
+          </div>
 
-.dcr-field-full {
-  grid-column: 1 / -1;
-}
+          <div class="dcr-field">
+            <label for="property-type">Property Type</label>
+            <select id="property-type" name="property-type" required>
+              <option value="">Select one</option>
+              <option>Primary Residence</option>
+              <option>Second Home</option>
+              <option>Short-Term Rental</option>
+              <option>Mid-Term Rental</option>
+              <option>Investment Property</option>
+            </select>
+          </div>
 
-.dcr-field label {
-  font-size: 14px;
-  font-weight: 700;
-  margin-bottom: 6px;
-  color: #102a43;
-}
+          <div class="dcr-field">
+            <label for="service-needed">What do you need help with?</label>
+            <select id="service-needed" name="service-needed" required>
+              <option value="">Select one</option>
+              <option>Ongoing Property Care</option>
+              <option>Exterior Upkeep</option>
+              <option>Repairs / Maintenance</option>
+              <option>Rental Readiness</option>
+              <option>Multiple Services</option>
+            </select>
+          </div>
 
-.dcr-field input,
-.dcr-field select,
-.dcr-field textarea {
-  width: 100%;
-  padding: 14px 14px;
-  border-radius: 10px;
-  border: 1px solid #d7dde4;
-  font-size: 15px;
-  transition: all 0.2s ease;
-}
+          <div class="dcr-field dcr-field-full">
+            <label for="message">Tell Us About Your Property</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us a little about the property and what kind of support you are looking for."></textarea>
+          </div>
 
-.dcr-field input:focus,
-.dcr-field select:focus,
-.dcr-field textarea:focus {
-  outline: none;
-  border-color: #2fa4a9;
-  box-shadow: 0 0 0 4px rgba(47,164,169,.15);
-}
+          <div class="dcr-field dcr-field-full">
+            <button type="submit" class="dcr-btn dcr-btn-primary dcr-btn-full">Request My Free Property Assessment</button>
+          </div>
 
-.dcr-field textarea {
-  min-height: 120px;
-}
+          <div class="dcr-form-note dcr-field-full">
+            We respect your privacy. No spam. Just helpful follow-up.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
 
-.dcr-btn-full {
-  width: 100%;
-  border: none;
-  cursor: pointer;
-}
-
-.dcr-form-note {
-  font-size: 13px;
-  color: #7a8693;
-  text-align: center;
-}
-
-/* MOBILE */
-@media (max-width: 768px) {
-  .dcr-form-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .dcr-form-card {
-    padding: 24px;
-  }
-}
-
-  <!-- SOUTHERN COMFORT CROSSOVER -->
   <section class="dcr-section">
     <div class="dcr-container dcr-crossover">
       <div class="dcr-section-label center">Additional Support</div>
@@ -230,7 +206,6 @@
     </div>
   </section>
 
-  <!-- FINAL CTA -->
   <section class="dcr-final-cta">
     <div class="dcr-container center">
       <h2>Protect Your Property with a Team You Can Trust</h2>
