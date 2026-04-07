@@ -1,4 +1,3 @@
-
 :root {
   --dcr-navy: #102a43;
   --dcr-navy-2: #173a5c;
@@ -6,7 +5,7 @@
   --dcr-teal-dark: #258f93;
   --dcr-gold: #c6a15b;
   --dcr-sand: #f7f5f1;
-  --dcr-sand-2: #f0ede7;
+  --dcr-sand-2: #efeae2;
   --dcr-white: #ffffff;
   --dcr-text: #25303b;
   --dcr-muted: #5c6772;
@@ -15,8 +14,13 @@
   --dcr-radius: 18px;
 }
 
-* { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
@@ -26,10 +30,19 @@ body {
   line-height: 1.6;
 }
 
-img { max-width: 100%; display: block; }
-a { color: inherit; text-decoration: none; }
+img {
+  max-width: 100%;
+  display: block;
+}
 
-.dcr-page { overflow: hidden; }
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.dcr-page {
+  overflow: hidden;
+}
 
 .dcr-container {
   width: 100%;
@@ -37,6 +50,8 @@ a { color: inherit; text-decoration: none; }
   margin: 0 auto;
   padding: 0 24px;
 }
+
+/* Hero */
 
 .dcr-hero {
   background:
@@ -46,14 +61,16 @@ a { color: inherit; text-decoration: none; }
   padding: 128px 0 110px;
 }
 
-.dcr-hero-content { max-width: 760px; }
+.dcr-hero-content {
+  max-width: 760px;
+}
 
 .dcr-eyebrow {
   display: inline-block;
   padding: 10px 16px;
   border-radius: 999px;
-  background: rgba(255,255,255,0.12);
-  border: 1px solid rgba(255,255,255,0.18);
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   color: var(--dcr-white);
   font-size: 14px;
   font-weight: 700;
@@ -73,7 +90,7 @@ a { color: inherit; text-decoration: none; }
   margin: 0 0 30px;
   font-size: 20px;
   line-height: 1.7;
-  color: rgba(255,255,255,0.92);
+  color: rgba(255, 255, 255, 0.92);
 }
 
 .dcr-hero-buttons {
@@ -81,6 +98,8 @@ a { color: inherit; text-decoration: none; }
   flex-wrap: wrap;
   gap: 14px;
 }
+
+/* Buttons */
 
 .dcr-btn {
   display: inline-flex;
@@ -96,7 +115,7 @@ a { color: inherit; text-decoration: none; }
 .dcr-btn-primary {
   background: linear-gradient(135deg, var(--dcr-teal), var(--dcr-teal-dark));
   color: var(--dcr-white);
-  box-shadow: 0 10px 25px rgba(47,164,169,0.32);
+  box-shadow: 0 10px 25px rgba(47, 164, 169, 0.32);
 }
 
 .dcr-btn-primary:hover {
@@ -106,11 +125,11 @@ a { color: inherit; text-decoration: none; }
 .dcr-btn-secondary {
   background: transparent;
   color: var(--dcr-white);
-  border: 1px solid rgba(255,255,255,0.32);
+  border: 1px solid rgba(255, 255, 255, 0.32);
 }
 
 .dcr-btn-secondary:hover {
-  background: rgba(255,255,255,0.08);
+  background: rgba(255, 255, 255, 0.08);
 }
 
 .dcr-btn-full {
@@ -118,6 +137,8 @@ a { color: inherit; text-decoration: none; }
   border: none;
   cursor: pointer;
 }
+
+/* Trust bar */
 
 .dcr-trust-bar {
   background: var(--dcr-teal);
@@ -134,9 +155,19 @@ a { color: inherit; text-decoration: none; }
   font-weight: 700;
 }
 
-.dcr-section { padding: 88px 0; }
-.dcr-section-alt { background: var(--dcr-white); }
-.dcr-dark-section { background: var(--dcr-navy); }
+/* Shared sections */
+
+.dcr-section {
+  padding: 88px 0;
+}
+
+.dcr-section-alt {
+  background: var(--dcr-white);
+}
+
+.dcr-dark-section {
+  background: var(--dcr-navy);
+}
 
 .dcr-section-label {
   margin-bottom: 14px;
@@ -147,7 +178,9 @@ a { color: inherit; text-decoration: none; }
   color: var(--dcr-teal);
 }
 
-.dcr-section-label.light { color: #7fd8db; }
+.dcr-section-label.light {
+  color: #7fd8db;
+}
 
 h2 {
   margin: 0 0 18px;
@@ -171,14 +204,21 @@ p {
   color: var(--dcr-muted);
 }
 
-.center { text-align: center; }
-.light { color: var(--dcr-white); }
+.center {
+  text-align: center;
+}
+
+.light {
+  color: var(--dcr-white);
+}
 
 .narrow {
   max-width: 760px;
   margin-left: auto;
   margin-right: auto;
 }
+
+/* Who we serve */
 
 .dcr-two-column {
   display: grid;
@@ -197,10 +237,12 @@ p {
   border: 1px solid var(--dcr-border);
   border-radius: 14px;
   padding: 20px 22px;
-  box-shadow: 0 10px 25px rgba(16,42,67,0.06);
+  box-shadow: 0 10px 25px rgba(16, 42, 67, 0.06);
   font-weight: 700;
   color: var(--dcr-navy);
 }
+
+/* Steps */
 
 .dcr-steps {
   display: grid;
@@ -213,7 +255,7 @@ p {
   background: #f7fafd;
   border-radius: 16px;
   padding: 28px;
-  box-shadow: 0 10px 30px rgba(16,42,67,0.06);
+  box-shadow: 0 10px 30px rgba(16, 42, 67, 0.06);
 }
 
 .dcr-step-number {
@@ -229,6 +271,8 @@ p {
   font-weight: 800;
 }
 
+/* Services */
+
 .dcr-services-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -241,8 +285,10 @@ p {
   border-radius: 16px;
   padding: 30px;
   border-top: 4px solid var(--dcr-teal);
-  box-shadow: 0 12px 30px rgba(16,42,67,0.08);
+  box-shadow: 0 12px 30px rgba(16, 42, 67, 0.08);
 }
+
+/* Benefits */
 
 .dcr-benefits-grid {
   display: grid;
@@ -252,13 +298,15 @@ p {
 }
 
 .dcr-benefit-card {
-  background: rgba(255,255,255,0.08);
-  border: 1px solid rgba(255,255,255,0.14);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
   border-radius: 14px;
   padding: 22px;
   color: var(--dcr-white);
   font-weight: 700;
 }
+
+/* Form section */
 
 .dcr-form-section {
   background: linear-gradient(180deg, var(--dcr-sand) 0%, var(--dcr-sand-2) 100%);
@@ -271,7 +319,9 @@ p {
   align-items: start;
 }
 
-.dcr-form-copy h2 { margin-bottom: 18px; }
+.dcr-form-copy h2 {
+  margin-bottom: 18px;
+}
 
 .dcr-form-points {
   display: grid;
@@ -348,7 +398,7 @@ p {
 .dcr-field textarea:focus {
   outline: none;
   border-color: var(--dcr-teal);
-  box-shadow: 0 0 0 4px rgba(47,164,169,0.15);
+  box-shadow: 0 0 0 4px rgba(47, 164, 169, 0.15);
 }
 
 .dcr-field textarea {
@@ -362,9 +412,13 @@ p {
   text-align: center;
 }
 
+/* Additional support */
+
 .dcr-crossover {
   max-width: 900px;
 }
+
+/* Final CTA */
 
 .dcr-final-cta {
   background: linear-gradient(135deg, var(--dcr-navy) 0%, var(--dcr-navy-2) 100%);
@@ -380,13 +434,17 @@ p {
 .dcr-final-cta p {
   max-width: 760px;
   margin: 0 auto 28px;
-  color: rgba(255,255,255,0.9);
+  color: rgba(255, 255, 255, 0.9);
   font-size: 18px;
   line-height: 1.7;
 }
 
+/* Responsive */
+
 @media (max-width: 991px) {
-  .dcr-hero h1 { font-size: 46px; }
+  .dcr-hero h1 {
+    font-size: 46px;
+  }
 
   .dcr-two-column,
   .dcr-steps,
@@ -403,7 +461,9 @@ p {
 }
 
 @media (max-width: 767px) {
-  .dcr-container { padding: 0 18px; }
+  .dcr-container {
+    padding: 0 18px;
+  }
 
   .dcr-hero {
     padding: 92px 0 78px;
