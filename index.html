@@ -128,90 +128,95 @@
     </div>
   </section>
 
-  <!-- FORM SECTION -->
-  <section class="dcr-section dcr-form-section" id="dcr-form">
-    <div class="dcr-container dcr-form-wrap">
-      <div class="dcr-form-copy">
-        <div class="dcr-section-label">Free Property Assessment</div>
-        <h2>Get Trusted Local Help Without the Guesswork</h2>
-        <p>
-          Tell us a little about your property and what kind of help you are looking for.
-          We’ll follow up to learn more and see if DCR is the right fit.
-        </p>
+/* ===== DCR FORM (CLEAN + HIGH CONVERSION) ===== */
 
-        <div class="dcr-form-points">
-          <div>✔ No pressure</div>
-          <div>✔ Local team with 6+ years serving Savannah & Tybee</div>
-          <div>✔ Ideal for second homes, rentals, and investment properties</div>
-        </div>
-      </div>
+.dcr-form-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 32px;
+  box-shadow: 0 18px 40px rgba(16,42,67,.1);
+  border: 1px solid rgba(16,42,67,.06);
+}
 
-      <div class="dcr-form-card">
-        <h3>Request Your Free Assessment</h3>
-        <p class="dcr-form-intro">Fill out the quick form below and our team will be in touch.</p>
+.dcr-form-card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 26px;
+  color: #102a43;
+}
 
-        <!-- Replace action with your Webflow form action if needed -->
-        <form method="post" action="#" class="dcr-form-grid">
-          <div class="dcr-field">
-            <label for="name">Full Name</label>
-            <input type="text" id="name" name="name" placeholder="Your name" required>
-          </div>
+.dcr-form-intro {
+  margin-bottom: 20px;
+  color: #5c6772;
+}
 
-          <div class="dcr-field">
-            <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="phone" placeholder="Best number to reach you" required>
-          </div>
+.dcr-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
 
-          <div class="dcr-field">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" placeholder="Your email" required>
-          </div>
+.dcr-field {
+  display: flex;
+  flex-direction: column;
+}
 
-          <div class="dcr-field">
-            <label for="location">Property Location</label>
-            <input type="text" id="location" name="location" placeholder="Savannah, Tybee, or nearby" required>
-          </div>
+.dcr-field-full {
+  grid-column: 1 / -1;
+}
 
-          <div class="dcr-field">
-            <label for="property-type">Property Type</label>
-            <select id="property-type" name="property-type" required>
-              <option value="">Select one</option>
-              <option>Primary Residence</option>
-              <option>Second Home</option>
-              <option>Short-Term Rental</option>
-              <option>Mid-Term Rental</option>
-              <option>Investment Property</option>
-            </select>
-          </div>
+.dcr-field label {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #102a43;
+}
 
-          <div class="dcr-field">
-            <label for="service-needed">What do you need help with?</label>
-            <select id="service-needed" name="service-needed" required>
-              <option value="">Select one</option>
-              <option>Ongoing Property Care</option>
-              <option>Exterior Upkeep</option>
-              <option>Repairs / Maintenance</option>
-              <option>Rental Readiness</option>
-              <option>Multiple Services</option>
-            </select>
-          </div>
+.dcr-field input,
+.dcr-field select,
+.dcr-field textarea {
+  width: 100%;
+  padding: 14px 14px;
+  border-radius: 10px;
+  border: 1px solid #d7dde4;
+  font-size: 15px;
+  transition: all 0.2s ease;
+}
 
-          <div class="dcr-field dcr-field-full">
-            <label for="message">Tell Us About Your Property</label>
-            <textarea id="message" name="message" rows="5" placeholder="Tell us a little about the property and what kind of support you are looking for."></textarea>
-          </div>
+.dcr-field input:focus,
+.dcr-field select:focus,
+.dcr-field textarea:focus {
+  outline: none;
+  border-color: #2fa4a9;
+  box-shadow: 0 0 0 4px rgba(47,164,169,.15);
+}
 
-          <div class="dcr-field dcr-field-full">
-            <button type="submit" class="dcr-btn dcr-btn-primary dcr-btn-full">Request My Free Property Assessment</button>
-          </div>
+.dcr-field textarea {
+  min-height: 120px;
+}
 
-          <div class="dcr-form-note dcr-field-full">
-            By submitting this form, you agree to be contacted about your property care needs.
-          </div>
-        </form>
-      </div>
-    </div>
-  </section>
+.dcr-btn-full {
+  width: 100%;
+  border: none;
+  cursor: pointer;
+}
+
+.dcr-form-note {
+  font-size: 13px;
+  color: #7a8693;
+  text-align: center;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .dcr-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dcr-form-card {
+    padding: 24px;
+  }
+}
 
   <!-- SOUTHERN COMFORT CROSSOVER -->
   <section class="dcr-section">
