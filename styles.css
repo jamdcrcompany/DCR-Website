@@ -496,5 +496,13 @@ p {
 
   .dcr-form-card {
     padding: 24px;
+    .dcr-transition-section {
+  background: linear-gradient(180deg, #ffffff 0%, #f7f5f1 100%);
+}
+
+.dcr-transition-cta {
+  margin-top: 28px;
+  text-align: center;
+}
   }
 }
