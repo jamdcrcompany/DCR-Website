@@ -243,4 +243,125 @@ textarea {
   .dcr-benefits-grid {
     grid-template-columns: 1fr;
   }
+}/* SUBTLE ANIMATIONS */
+@keyframes dcrFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes dcrFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes dcrFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+/* Hero content */
+.dcr-hero-content > * {
+  opacity: 0;
+  animation: dcrFadeUp 0.8s ease forwards;
+}
+
+.dcr-eyebrow {
+  animation-delay: 0.1s;
+}
+
+.dcr-hero h1 {
+  animation-delay: 0.2s;
+}
+
+.dcr-hero-subtext {
+  animation-delay: 0.35s;
+}
+
+.dcr-hero-buttons {
+  opacity: 0;
+  animation: dcrFadeUp 0.8s ease forwards;
+  animation-delay: 0.5s;
+}
+
+.dcr-hero-callout {
+  animation: dcrFadeUp 0.8s ease forwards, dcrFloat 3.2s ease-in-out infinite;
+  animation-delay: 0.7s, 1.4s;
+}
+
+/* Cards */
+.dcr-card,
+.dcr-step-card,
+.dcr-service-card,
+.dcr-benefit-card,
+.dcr-form-card,
+.dcr-transition-card,
+.dcr-final-cta-inner {
+  transition: transform 0.28s ease, box-shadow 0.28s ease, background-color 0.28s ease;
+}
+
+.dcr-card:hover,
+.dcr-step-card:hover,
+.dcr-service-card:hover,
+.dcr-benefit-card:hover,
+.dcr-form-card:hover,
+.dcr-transition-card:hover,
+.dcr-final-cta-inner:hover {
+  transform: translateY(-4px);
+}
+
+/* Buttons */
+.dcr-btn {
+  transition: transform 0.22s ease, box-shadow 0.22s ease, background-color 0.22s ease, color 0.22s ease;
+}
+
+.dcr-btn:hover {
+  transform: translateY(-2px);
+}
+
+.dcr-btn:active {
+  transform: translateY(0);
+}
+
+/* Form fields */
+input,
+select,
+textarea {
+  transition: border-color 0.22s ease, box-shadow 0.22s ease, background-color 0.22s ease, transform 0.18s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  transform: translateY(-1px);
+}
+
+/* Footer links */
+.dcr-footer a {
+  transition: color 0.22s ease, transform 0.22s ease;
+}
+
+.dcr-footer a:hover {
+  transform: translateX(3px);
+}
+
+/* Gentle section reveal on load */
+.dcr-trust-bar,
+.dcr-section,
+.dcr-final-cta,
+.dcr-footer {
+  animation: dcrFadeIn 0.9s ease;
 }
