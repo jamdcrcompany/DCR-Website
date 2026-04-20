@@ -1,3 +1,27 @@
+/* BRAND HEADER */
+.dcr-brand {
+  margin-bottom: 18px;
+  animation: dcrFadeUp 0.8s ease forwards;
+  animation-delay: 0.05s;
+}
+
+.dcr-brand-title {
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  font-weight: 900;
+  color: white;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.dcr-brand-sub {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.85);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+
 :root {
   --navy: #12344A;
   --navy-dark: #0D2636;
