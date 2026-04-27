@@ -863,6 +863,20 @@ textarea:focus {
   }
 
   .dcr-gallery-card img {
+    .dcr-gallery-preview {
+  width: 100%;
+  max-width: 1100px;
+  margin: 60px auto 40px;
+  padding: 0 20px;
+}
+
+.dcr-gallery-preview img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  display: block;
+}
     height: 240px;
   }
 
