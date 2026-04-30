@@ -4,22 +4,31 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>DCR & Company | Property Maintenance Services in Savannah & Tybee Island</title>
+  <title>DCR & Company | Property Maintenance & Renovations in Savannah & Tybee Island</title>
 
-  <meta name="description" content="DCR & Company provides property maintenance services in Savannah and Tybee Island for homeowners, rental properties, short-term rentals, and mid-term rentals." />
+  <meta name="description" content="DCR & Company provides property maintenance, renovations, and rental property support in Savannah, Tybee Island, and surrounding areas." />
 
   <style>
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
     }
 
     body {
-      font-family: Arial, sans-serif;
-      color: #1f2933;
-      background: #f7f4ef;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f8f8;
+      color: #1f2f34;
       line-height: 1.6;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
     }
 
     a {
@@ -27,7 +36,7 @@
       color: inherit;
     }
 
-    .dcr-container {
+    .container {
       width: 92%;
       max-width: 1150px;
       margin: 0 auto;
@@ -35,198 +44,194 @@
 
     header {
       background: #ffffff;
-      padding: 18px 0;
-      border-bottom: 1px solid #e5e0d8;
+      border-bottom: 1px solid #dfe7e8;
       position: sticky;
       top: 0;
-      z-index: 10;
+      z-index: 100;
     }
 
-    .dcr-nav {
+    .nav {
       display: flex;
-      justify-content: space-between;
       align-items: center;
+      justify-content: space-between;
+      padding: 18px 0;
       gap: 20px;
     }
 
-    .dcr-logo {
-      font-size: 26px;
+    .logo {
+      font-size: 28px;
       font-weight: 800;
-      color: #263238;
+      color: #24464d;
     }
 
-    .dcr-logo span {
-      color: #9b6b3d;
+    .logo span {
+      color: #2f8f9d;
     }
 
-    .dcr-nav-links {
+    .nav-links {
       display: flex;
       gap: 22px;
       align-items: center;
-      font-weight: 600;
       font-size: 15px;
+      font-weight: 700;
     }
 
-    .dcr-button {
+    .btn {
       display: inline-block;
-      background: #9b6b3d;
-      color: #fff;
+      background: #2f8f9d;
+      color: #ffffff;
       padding: 13px 22px;
       border-radius: 999px;
-      font-weight: 700;
-      transition: 0.2s ease;
+      font-weight: 800;
+      border: none;
+      cursor: pointer;
     }
 
-    .dcr-button:hover {
-      background: #7d552e;
+    .btn:hover {
+      background: #24717d;
     }
 
-    .dcr-hero {
-      background: linear-gradient(rgba(20, 30, 35, 0.72), rgba(20, 30, 35, 0.72)),
-        url("images/dcr-hero.jpg");
+    .hero {
+      background:
+        linear-gradient(rgba(31, 47, 52, 0.72), rgba(31, 47, 52, 0.72)),
+        url("images/dcr-propertycare-project-gallery-web.jpg");
       background-size: cover;
       background-position: center;
       color: white;
-      padding: 95px 0;
       text-align: center;
+      padding: 105px 0;
     }
 
-    .dcr-hero h1 {
+    .hero h1 {
       font-size: clamp(38px, 6vw, 64px);
       line-height: 1.1;
-      margin-bottom: 22px;
+      margin-bottom: 20px;
     }
 
-    .dcr-hero p {
-      max-width: 760px;
+    .hero p {
+      max-width: 780px;
       margin: 0 auto 28px;
       font-size: 20px;
     }
 
-    .dcr-hero-callout {
-      margin-top: 26px;
-      font-size: 24px;
-      font-weight: 800;
-      color: #fff;
+    .hero-phone {
+      margin-top: 24px;
+      font-size: 26px;
+      font-weight: 900;
     }
 
-    .dcr-section {
+    section {
       padding: 75px 0;
     }
 
-    .dcr-section-label {
-      color: #9b6b3d;
-      font-size: 14px;
-      font-weight: 800;
+    .section-light {
+      background: #ffffff;
+    }
+
+    .section-label {
+      color: #2f8f9d;
       text-transform: uppercase;
+      font-size: 14px;
       letter-spacing: 1.5px;
+      font-weight: 900;
       margin-bottom: 10px;
     }
 
-    .dcr-section h2 {
+    h2 {
       font-size: clamp(30px, 4vw, 44px);
-      margin-bottom: 16px;
-      color: #24313a;
       line-height: 1.15;
+      color: #24464d;
+      margin-bottom: 16px;
     }
 
-    .dcr-section p {
+    p {
       font-size: 17px;
-      color: #4b5563;
+      color: #4b5d63;
     }
 
-    .dcr-grid {
+    .center {
+      text-align: center;
+    }
+
+    .grid-3 {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 24px;
       margin-top: 35px;
     }
 
-    .dcr-card {
+    .card {
       background: #ffffff;
       border-radius: 18px;
       padding: 28px;
       box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-      border: 1px solid #ece7df;
+      border: 1px solid #e2eaeb;
     }
 
-    .dcr-card h3 {
+    .card h3 {
+      color: #24464d;
       font-size: 22px;
       margin-bottom: 12px;
-      color: #24313a;
     }
 
-    .dcr-about {
-      background: #ffffff;
-    }
-
-    .dcr-about-wrap {
+    .split {
       display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
+      grid-template-columns: 1.05fr 0.95fr;
       gap: 45px;
       align-items: center;
     }
 
-    .dcr-list {
-      margin-top: 22px;
+    ul {
       list-style: none;
+      margin-top: 22px;
     }
 
-    .dcr-list li {
+    li {
       margin-bottom: 12px;
       font-size: 17px;
-      color: #374151;
+      color: #37474f;
     }
 
-    .dcr-list li::before {
+    li::before {
       content: "✓";
-      color: #9b6b3d;
-      font-weight: bold;
+      color: #2f8f9d;
+      font-weight: 900;
       margin-right: 10px;
     }
 
-    .dcr-project-gallery {
-      background: #f7f4ef;
-      text-align: center;
-    }
-
-    .dcr-project-gallery img {
-      width: 100%;
-      max-width: 1100px;
-      height: auto;
-      display: block;
+    .gallery-img {
       margin: 30px auto 0;
       border-radius: 18px;
-      box-shadow: 0 14px 35px rgba(0,0,0,0.18);
+      box-shadow: 0 14px 35px rgba(0,0,0,0.16);
+      width: 100%;
+      max-width: 1100px;
     }
 
-    .dcr-form-section {
-      background: #ffffff;
-    }
-
-    .dcr-form-wrap {
+    .form-wrap {
       display: grid;
       grid-template-columns: 0.9fr 1.1fr;
-      gap: 40px;
+      gap: 42px;
       align-items: start;
     }
 
     form {
-      background: #f7f4ef;
+      background: #f5f8f8;
       padding: 32px;
       border-radius: 20px;
-      border: 1px solid #e5e0d8;
+      border: 1px solid #dfe7e8;
       box-shadow: 0 10px 30px rgba(0,0,0,0.08);
     }
 
-    input, textarea, select {
+    input,
+    select,
+    textarea {
       width: 100%;
       padding: 15px;
       margin-bottom: 16px;
       border-radius: 10px;
-      border: 1px solid #d1d5db;
+      border: 1px solid #cfd8dc;
       font-size: 16px;
-      font-family: Arial, sans-serif;
+      font-family: Arial, Helvetica, sans-serif;
     }
 
     textarea {
@@ -236,58 +241,59 @@
 
     button {
       width: 100%;
-      border: none;
-      cursor: pointer;
-      background: #9b6b3d;
-      color: white;
+      background: #2f8f9d;
+      color: #ffffff;
       padding: 16px;
       border-radius: 999px;
       font-size: 17px;
-      font-weight: 800;
+      font-weight: 900;
+      border: none;
+      cursor: pointer;
     }
 
     footer {
-      background: #1f2933;
-      color: #ffffff;
-      padding: 45px 0;
+      background: #24464d;
+      color: white;
       text-align: center;
+      padding: 45px 0;
     }
 
     footer h2 {
-      margin-bottom: 12px;
-      font-size: 28px;
+      color: white;
+      font-size: 30px;
+      margin-bottom: 10px;
     }
 
     footer p {
+      color: #e7f0f1;
       margin-bottom: 8px;
-      color: #e5e7eb;
     }
 
     .footer-phone {
-      font-size: 26px;
-      font-weight: 800;
-      color: #ffffff;
+      font-size: 28px;
+      font-weight: 900;
       margin: 16px 0;
+      color: white;
     }
 
     @media (max-width: 850px) {
-      .dcr-nav {
+      .nav {
         flex-direction: column;
       }
 
-      .dcr-nav-links {
+      .nav-links {
         flex-wrap: wrap;
         justify-content: center;
       }
 
-      .dcr-grid,
-      .dcr-about-wrap,
-      .dcr-form-wrap {
+      .grid-3,
+      .split,
+      .form-wrap {
         grid-template-columns: 1fr;
       }
 
-      .dcr-hero {
-        padding: 75px 0;
+      .hero {
+        padding: 80px 0;
       }
     }
   </style>
@@ -296,133 +302,149 @@
 <body id="top">
 
   <header>
-    <div class="dcr-container dcr-nav">
-      <div class="dcr-logo">DCR <span>& Company</span></div>
+    <div class="container nav">
+      <div class="logo">DCR <span>& Company</span></div>
 
-      <nav class="dcr-nav-links">
+      <nav class="nav-links">
         <a href="#services">Services</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
-        <a class="dcr-button" href="tel:9127845495">Call 912-784-5495</a>
+        <a class="btn" href="tel:9127845495">Call 912-784-5495</a>
       </nav>
     </div>
   </header>
 
-  <section class="dcr-hero">
-    <div class="dcr-container">
-      <h1>Trusted Property Maintenance in Savannah & Tybee Island</h1>
+  <section class="hero">
+    <div class="container">
+      <h1>Property Maintenance & Renovations You Can Count On</h1>
       <p>
-        DCR & Company helps homeowners, rental owners, and short-term rental properties with reliable maintenance, repairs, renovations, and local property care.
+        Local property maintenance, renovations, repairs, and rental property support for homeowners in Savannah, Tybee Island, and surrounding areas.
       </p>
-      <a class="dcr-button" href="#contact">Request a Free Property Assessment</a>
 
-      <div class="dcr-hero-callout">
+      <a class="btn" href="#contact">Request a Free Property Assessment</a>
+
+      <div class="hero-phone">
         Call or Text: 912-784-5495
       </div>
     </div>
   </section>
 
-  <section class="dcr-section dcr-about">
-    <div class="dcr-container dcr-about-wrap">
+  <section class="section-light">
+    <div class="container split">
       <div>
-        <div class="dcr-section-label">Local. Reliable. Full-Service.</div>
-        <h2>Helping Property Owners Protect and Improve Their Homes</h2>
+        <div class="section-label">Local Property Care</div>
+        <h2>DCR & Company Helps Keep Your Property Maintained, Updated, and Rental Ready</h2>
         <p>
-          DCR & Company is a local, family-owned property maintenance and renovation company serving Savannah, Tybee Island, and surrounding areas.
+          DCR & Company is a local, family-owned property maintenance and renovation company serving homeowners, rental owners, and investment properties throughout the Savannah and Tybee Island area.
         </p>
 
-        <ul class="dcr-list">
-          <li>Property maintenance for homeowners and rental properties</li>
-          <li>Short-term and mid-term rental maintenance support</li>
-          <li>Renovation work and property improvements</li>
-          <li>Reliable local communication and service</li>
+        <ul>
+          <li>Property maintenance and repairs</li>
+          <li>Renovation and improvement projects</li>
+          <li>Short-term and mid-term rental support</li>
+          <li>Reliable local service and communication</li>
         </ul>
       </div>
 
-      <div class="dcr-card">
-        <h3>Need help with your property?</h3>
+      <div class="card">
+        <h3>Need help with a property?</h3>
         <p>
-          Whether you need ongoing maintenance, repairs, renovation help, or support for a rental property, DCR & Company can help.
+          Whether it is a repair, renovation, rental property need, or ongoing maintenance, we would be happy to take a look.
         </p>
-        <br />
-        <a class="dcr-button" href="tel:9127845495">Call or Text James</a>
+        <br>
+        <a class="btn" href="tel:9127845495">Call or Text James</a>
       </div>
     </div>
   </section>
 
-  <section class="dcr-section" id="services">
-    <div class="dcr-container">
-      <div class="dcr-section-label">Our Services</div>
-      <h2>Property Maintenance & Renovation Services</h2>
+  <section id="services">
+    <div class="container">
+      <div class="section-label">Our Services</div>
+      <h2>Property Maintenance Services</h2>
       <p>
-        We help property owners keep their homes maintained, rental-ready, and looking their best.
+        We help property owners handle the work needed to protect, improve, and maintain their homes.
       </p>
 
-      <div class="dcr-grid">
-        <div class="dcr-card">
-          <h3>Property Maintenance</h3>
-          <p>General repairs, upkeep, punch-list items, and ongoing property care.</p>
+      <div class="grid-3">
+        <div class="card">
+          <h3>Maintenance</h3>
+          <p>General repairs, upkeep, punch-list items, and property care.</p>
         </div>
 
-        <div class="dcr-card">
-          <h3>Rental Property Support</h3>
-          <p>Maintenance help for short-term rentals, mid-term rentals, and investment homes.</p>
-        </div>
-
-        <div class="dcr-card">
+        <div class="card">
           <h3>Renovations</h3>
-          <p>Interior updates, repairs, improvements, and renovation support for local properties.</p>
+          <p>Interior updates, repairs, upgrades, and improvement projects.</p>
+        </div>
+
+        <div class="card">
+          <h3>Rental Support</h3>
+          <p>Maintenance support for short-term rentals, mid-term rentals, and investment homes.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <<section class="dcr-section dcr-project-gallery" id="project-gallery">
-  <div class="dcr-container">
-    <div class="dcr-section-label">Project Gallery</div>
+  <section class="section-light center" id="projects">
+    <div class="container">
+      <div class="section-label">Project Gallery</div>
+      <h2>Southern Honky Tonk Renovation Work</h2>
+      <p>
+        A look at recent renovation and property improvement work completed by DCR & Company.
+      </p>
 
-    <h2>Southern Honky Tonk Renovation Work</h2>
+      <img
+        class="gallery-img"
+        src="images/dcr-propertycare-project-gallery-web.jpg"
+        alt="DCR and Company Southern Honky Tonk renovation project gallery"
+      >
+    </div>
+  </section>
 
-    <p>
-      A look at recent renovation and property improvement work completed by DCR & Company.
-    </p>
+  <section class="center">
+    <div class="container">
+      <div class="section-label">Before Photos</div>
+      <h2>Southern Honky Tonk Renovation — Before</h2>
+      <p>
+        A look at the starting point before transformation by DCR & Company.
+      </p>
 
-    <img 
-      src="images/dcr-propertycare-project-gallery-web.jpg"
-      alt="DCR & Company Southern Honky Tonk renovation project gallery in Savannah"
-      style="width:100%; max-width:1100px; height:auto; display:block; margin:25px auto; border-radius:16px; box-shadow:0 10px 30px rgba(0,0,0,0.15);"
-    >
-  </div>
-</section>
-  <section class="dcr-section dcr-form-section" id="contact">
-    <div class="dcr-container dcr-form-wrap">
+      <img
+        class="gallery-img"
+        src="images/southern-honky-tonk-before-pictures.jpg"
+        alt="Southern Honky Tonk before renovation photos by DCR and Company"
+      >
+    </div>
+  </section>
+
+  <section class="section-light" id="contact">
+    <div class="container form-wrap">
       <div>
-        <div class="dcr-section-label">Free Property Assessment</div>
+        <div class="section-label">Free Property Assessment</div>
         <h2>Get Trusted Local Help Without the Guesswork</h2>
         <p>
-          Tell us a little about your property and what kind of help you need. We’ll follow up with you directly.
+          Tell us a little about your property and what kind of help you need. We will follow up with you directly.
         </p>
 
-        <ul class="dcr-list">
+        <ul>
           <li>Maintenance</li>
           <li>Renovations</li>
           <li>Rental property support</li>
           <li>Property improvement projects</li>
         </ul>
 
-        <p style="margin-top:20px; font-size:22px; font-weight:800;">
+        <p style="margin-top:22px; font-size:24px; font-weight:900; color:#24464d;">
           Call or Text: 912-784-5495
         </p>
       </div>
 
       <form action="https://formspree.io/f/xojpwbaz" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="text" name="name" placeholder="Your Name" required>
 
-        <input type="email" name="email" placeholder="Your Email" required />
+        <input type="email" name="email" placeholder="Your Email" required>
 
-        <input type="tel" name="phone" placeholder="Phone Number" />
+        <input type="tel" name="phone" placeholder="Phone Number">
 
-        <input type="text" name="property_location" placeholder="Property Location" />
+        <input type="text" name="property_location" placeholder="Property Location">
 
         <select name="service_needed">
           <option value="">What do you need help with?</option>
@@ -440,14 +462,12 @@
   </section>
 
   <footer>
-    <div class="dcr-container">
+    <div class="container">
       <h2>DCR & Company</h2>
-      <p>Property Maintenance Services in Savannah & Tybee Island</p>
+      <p>Property Maintenance & Renovations in Savannah and Tybee Island</p>
       <div class="footer-phone">912-784-5495</div>
       <p>Ask for James</p>
-      <p>
-        <a href="#top">Back to Top</a>
-      </p>
+      <p><a href="#top">Back to Top</a></p>
     </div>
   </footer>
 
