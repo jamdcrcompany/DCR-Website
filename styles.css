@@ -899,6 +899,26 @@ textarea:focus {
   border-radius: 14px;
   box-shadow: 0 12px 35px rgba(0,0,0,0.12);
   display: block;
+
+body {
+  background: #ffffff;
+}
+
+.section-light {
+  background: #f7f7f9;
+}.cta-button {
+  background: #6A35FF;
+  color: #fff;
+  padding: 16px 28px;
+  border-radius: 8px;
+  font-weight: 600;
+  box-shadow: 0 6px 18px rgba(106,53,255,0.25);
+}.phone-highlight {
+  color: #FF8C42;
+  font-weight: bold;
+  font-size: 20px;
+}
+  
 }
   }
 
